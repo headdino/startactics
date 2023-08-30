@@ -1,0 +1,8 @@
+g_isClear[0] : 1
+g_isClear[1] : 1
+g_isClear[2] : 1
+g_isClear[3] : 1
+g_isClear[4] : 0
+Master Volume : 0.538000
+BackGround Volume : 0.549000
+Extra Volume : 0.527000

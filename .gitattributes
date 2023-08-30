@@ -1,0 +1,3 @@
+WinAPI32/sound/bgm/bgm_map0.wav filter=lfs diff=lfs merge=lfs -text
+WinAPI32/sound/bgm/bgm_map2.wav filter=lfs diff=lfs merge=lfs -text
+WinAPI32/sound/bgm/bgm_map4.wav filter=lfs diff=lfs merge=lfs -text

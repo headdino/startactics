@@ -1,0 +1,27 @@
+20
+0 Marine
+0 SCV
+0 FireBat
+0 Ghost
+0 Medic
+0 Tank
+1 Drone
+4 Zurgling
+3 Hydra
+2 Ultra
+0 Probe
+0 Zealot
+0 Dragon
+0 River
+0 Maneuver
+0 Field repair
+0 SteamPack
+0 Siege Mode
+2 Yamato
+2 Torasque Roar
+2 Sudden Raid
+2 Lurker
+2 Brudling
+0 Make Him Dragon
+0 MindControl
+0 Recall

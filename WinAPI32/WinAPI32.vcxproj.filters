@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="GameNode.h" />
+    <ClInclude Include="MyFunc.h" />
+    <ClInclude Include="Object\Rect.h" />
+    <ClInclude Include="Object\Circle.h" />
+    <ClInclude Include="Singleton\SoundManager.h" />
+    <ClInclude Include="Singleton\SingletonBase.h" />
+    <ClInclude Include="Singleton\TimeManager.h" />
+    <ClInclude Include="Singleton\KeyManager.h" />
+    <ClInclude Include="Object\Shader.h" />
+    <ClInclude Include="Singleton\CameraManager.h" />
+    <ClInclude Include="Object\Image.h" />
+    <ClInclude Include="Singleton\ImageManager.h" />
+    <ClInclude Include="Singleton\WriteManager.h" />
+    <ClInclude Include="Singleton\SceneManager.h" />
+    <ClInclude Include="MiniGame\ImgSort.h" />
+    <ClInclude Include="MiniGame\map\TileMap.h" />
+    <ClInclude Include="MiniGame\unit\protoss.h" />
+    <ClInclude Include="MiniGame\unit\Unit.h" />
+    <ClInclude Include="MiniGame\unit\UnitManager.h" />
+    <ClInclude Include="MiniGame\unit\terran.h" />
+    <ClInclude Include="MiniGame\unit\zerg.h" />
+    <ClInclude Include="MiniGame\Scene\CardDeck.h" />
+    <ClInclude Include="MiniGame\Scene\Loading.h" />
+    <ClInclude Include="MiniGame\Scene\Menu.h" />
+    <ClInclude Include="MiniGame\Scene\PlayGame.h" />
+    <ClInclude Include="MiniGame\Scene\TileMapEdit.h" />
+    <ClInclude Include="Object\progressBar.h" />
+    <ClInclude Include="MiniGame\Card.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinAPI32.cpp" />
+    <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="Object\Rect.cpp" />
+    <ClCompile Include="Object\Circle.cpp" />
+    <ClCompile Include="Singleton\SoundManager.cpp" />
+    <ClCompile Include="Singleton\TimeManager.cpp" />
+    <ClCompile Include="Singleton\KeyManager.cpp" />
+    <ClCompile Include="Object\Shader.cpp" />
+    <ClCompile Include="Singleton\CameraManager.cpp" />
+    <ClCompile Include="Object\Image.cpp" />
+    <ClCompile Include="Singleton\ImageManager.cpp" />
+    <ClCompile Include="Singleton\WriteManager.cpp" />
+    <ClCompile Include="Singleton\SceneManager.cpp" />
+    <ClCompile Include="MiniGame\ImgSort.cpp" />
+    <ClCompile Include="MiniGame\map\TileMap.cpp" />
+    <ClCompile Include="MiniGame\unit\protoss.cpp" />
+    <ClCompile Include="MiniGame\unit\Unit.cpp" />
+    <ClCompile Include="MiniGame\unit\UnitManager.cpp" />
+    <ClCompile Include="MiniGame\unit\terran.cpp" />
+    <ClCompile Include="MiniGame\unit\zerg.cpp" />
+    <ClCompile Include="MiniGame\Scene\CardDeck.cpp" />
+    <ClCompile Include="MiniGame\Scene\Loading.cpp" />
+    <ClCompile Include="MiniGame\Scene\Menu.cpp" />
+    <ClCompile Include="MiniGame\Scene\PlayGame.cpp" />
+    <ClCompile Include="MiniGame\Scene\TileMapEdit.cpp" />
+    <ClCompile Include="Object\progressBar.cpp" />
+    <ClCompile Include="MiniGame\Card.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Object\Basic.hlsl" />
+    <None Include="Object\Image.hlsl" />
+  </ItemGroup>
+</Project>

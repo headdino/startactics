@@ -1,0 +1,54 @@
+﻿  Card.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  Menu.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  CardDeck.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  ImgSort.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  Loading.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  TileMap.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  PlayGame.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  protoss.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  progressBar.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  SceneManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  ImageManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  Image.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  CameraManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  Circle.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  Shader.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  KeyManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  MainGame.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  Rect.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  SoundManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  TimeManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  WriteManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  Unit.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  UnitManager.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  terran.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  TileMapEdit.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  WinAPI32.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
+  zerg.cpp
+D:\SSH\코딩\191031_급선회포폴(스타+아택틱스)\WinAPI32\stdafx.h(48,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx11.h': No such file or directory
