@@ -74,7 +74,7 @@ void Card::render()
 		m_cardImage->Scale(150.0f, 150.0f);
 		m_cardImage->Render();
 
-		//ºñ¿ë ¼ıÀÚ Ç¥½Ã
+		//ë¹„ìš© ìˆ«ì í‘œì‹œ
 		Image* img = IMGMANAGER->GetImage("ui_number");
 		img->Scale(40, 30);
 		img->GetRefCurrentFrameX() = m_ap;
@@ -87,7 +87,7 @@ void Card::render()
 			(long)(WINSIZEY - 110.0f),
 			(long)(m_pos.x + 75.0f),
 			(long)(WINSIZEY) };
-			WRITEMANAGER->RenderText(m_inform, rect, 15, L"±Ã¼­Ã¼", D3DXCOLOR(0, 0, 0, 1));
+			WRITEMANAGER->RenderText(m_inform, rect, 15, L"ê¶ì„œì²´", D3DXCOLOR(0, 0, 0, 1));
 		}
 		else
 		{
@@ -95,7 +95,7 @@ void Card::render()
 			(long)(WINSIZEY - 60.0f),
 			(long)(m_pos.x + 75.0f),
 			(long)(WINSIZEY) };
-			WRITEMANAGER->RenderText(m_inform, rect, 15, L"±Ã¼­Ã¼", D3DXCOLOR(0, 0, 0, 1));
+			WRITEMANAGER->RenderText(m_inform, rect, 15, L"ê¶ì„œì²´", D3DXCOLOR(0, 0, 0, 1));
 		}
 		
 	}
@@ -153,7 +153,7 @@ void Card::cardType()
 		m_atk = 1;
 		m_hp = 4;
 		m_range = 1;
-		m_inform = L"ÀÌ¾ß~ ¾ß±ÙÀÌ´Ù!";
+		m_inform = L"ì´ì•¼~ ì•¼ê·¼ì´ë‹¤!";
 		break;
 	case CARD_BARRIGATE:
 		m_attribute = CLICK_ONE;
@@ -162,7 +162,7 @@ void Card::cardType()
 		m_atk = 1;
 		m_hp = 4;
 		m_range = 1;
-		m_inform = L"SCV¸¦ º®À¸·Î ¹Ù²ß´Ï´Ù.";
+		m_inform = L"SCVë¥¼ ë²½ìœ¼ë¡œ ë°”ê¿‰ë‹ˆë‹¤.";
 		break;
 	case CARD_TANK:
 		m_attribute = CLICK_ONE;
@@ -180,7 +180,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¼±ÅÃÇÑ ¾Æ±ºÀ¯´ÖÀ» ´Ù¸¥ ¶óÀÎÀ¸·Î ¿òÁ÷ÀÔ´Ï´Ù.";
+		m_inform = L"ì„ íƒí•œ ì•„êµ°ìœ ë‹›ì„ ë‹¤ë¥¸ ë¼ì¸ìœ¼ë¡œ ì›€ì§ì…ë‹ˆë‹¤.";
 		break;
 	case CARD_FIELD_REPAIR:
 		m_attribute = CLICK_ONE;
@@ -189,7 +189,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 2;
 		m_range = 0;
-		m_inform = L"¹«¾ùÀÌµç Ã¼·ÂÀ» 2 È¸º¹½ÃÄÑÁİ´Ï´Ù.";
+		m_inform = L"ë¬´ì—‡ì´ë“  ì²´ë ¥ì„ 2 íšŒë³µì‹œì¼œì¤ë‹ˆë‹¤.";
 		break;
 	case CARD_STEAMPACK:
 		m_attribute = CLICK_ONE;
@@ -198,7 +198,7 @@ void Card::cardType()
 		m_atk = 1;
 		m_hp = 1;
 		m_range = 0;
-		m_inform = L"±âºĞÁÁÀº Çâ±â°¡ ¼Ö¼Ö ÇÇ¾î³­´Ù";
+		m_inform = L"ê¸°ë¶„ì¢‹ì€ í–¥ê¸°ê°€ ì†”ì†” í”¼ì–´ë‚œë‹¤";
 		break;
 	case CARD_MEDIC:
 		m_attribute = CLICK_ONE;
@@ -207,7 +207,7 @@ void Card::cardType()
 		m_atk = 1;
 		m_hp = 4;
 		m_range = 1;
-		m_inform = L"ÀÌ¶ù»şÀÌ¸¶¼¼~";
+		m_inform = L"ì´ëìƒ¤ì´ë§ˆì„¸~";
 		break;
 	case CARD_FIREBAT:
 		m_attribute = CLICK_ONE;
@@ -216,7 +216,7 @@ void Card::cardType()
 		m_atk = 2;
 		m_hp = 3;
 		m_range = 2;
-		m_inform = L"È®, ºÒ Áú·¯ ¹ö¸±±î¿ä?";
+		m_inform = L"í™•, ë¶ˆ ì§ˆëŸ¬ ë²„ë¦´ê¹Œìš”?";
 		break;
 	case CARD_GHOST:
 		m_attribute = CLICK_ONE;
@@ -225,7 +225,7 @@ void Card::cardType()
 		m_atk = 1;
 		m_hp = 2;
 		m_range = 5;
-		m_inform = L"¼ı°¡¶ô ±¸ºÎ¸®±â º¸¿©µå¸±±î¿ä?";
+		m_inform = L"ìˆ«ê°€ë½ êµ¬ë¶€ë¦¬ê¸° ë³´ì—¬ë“œë¦´ê¹Œìš”?";
 		break;
 	case CARD_SIEGE_MODE:
 		m_attribute = CLICK_ONE;
@@ -234,7 +234,7 @@ void Card::cardType()
 		m_atk = 1;
 		m_hp = 2;
 		m_range = 5;
-		m_inform = L"ÀÏºÎ´Â ½ÃÁî¸ğµå ÀÏºÎ´Â ÅüÅüÅü";
+		m_inform = L"ì¼ë¶€ëŠ” ì‹œì¦ˆëª¨ë“œ ì¼ë¶€ëŠ” í‰í‰í‰";
 		break; 
 	case CARD_YAMATO:
 		m_attribute = CLICK_ONE;
@@ -243,7 +243,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"ÁöÁ¤ÇÑ À¯´Ö¿¡°Ô 5µ¥¹ÌÁö¸¦ Áİ´Ï´Ù.";
+		m_inform = L"ì§€ì •í•œ ìœ ë‹›ì—ê²Œ 5ë°ë¯¸ì§€ë¥¼ ì¤ë‹ˆë‹¤.";
 		break;
 	case CARD_DRONE:
 		m_attribute = CLICK_ONE;
@@ -252,7 +252,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"µå·ĞÀº Ä«µå³¶ºñ";
+		m_inform = L"ë“œë¡ ì€ ì¹´ë“œë‚­ë¹„";
 		break;
 	case CARD_ZURGLING:
 		m_attribute = CLICK_ONE;
@@ -261,7 +261,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¾Ö¿Ï¿ë Àú±Û¸µÀÌ ´Üµ· 2¿ø!";
+		m_inform = L"ì• ì™„ìš© ì €ê¸€ë§ì´ ë‹¨ëˆ 2ì›!";
 		break;
 	case CARD_ZURGLING_TOKEN:
 		m_attribute = CLICK_ONE;
@@ -270,7 +270,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"ÅäÅ«À¸·Î ¸¸µé¾îÁø Àú±Û¸µÀÔ´Ï´Ù.";
+		m_inform = L"í† í°ìœ¼ë¡œ ë§Œë“¤ì–´ì§„ ì €ê¸€ë§ì…ë‹ˆë‹¤.";
 		break;
 	case CARD_HYDRA:
 		m_attribute = CLICK_ONE;
@@ -279,7 +279,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"S¶óÀÎÀ» Áö´Ï°í ÀÖ´Â Àú±×À¯´ÖÀÔ´Ï´Ù.";
+		m_inform = L"Së¼ì¸ì„ ì§€ë‹ˆê³  ìˆëŠ” ì €ê·¸ìœ ë‹›ì…ë‹ˆë‹¤.";
 		break;
 	case CARD_LURKER:
 		m_attribute = CLICK_ONE;
@@ -288,7 +288,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"È÷µå¶ó¸¦ ·²Ä¿·Î º¯½Å½ÃÅµ´Ï´Ù.";
+		m_inform = L"íˆë“œë¼ë¥¼ ëŸ´ì»¤ë¡œ ë³€ì‹ ì‹œí‚µë‹ˆë‹¤.";
 		break;
 	case CARD_BURROW:
 		m_attribute = CLICK_ONE;
@@ -297,7 +297,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"·²Ä¿¸¦ ¹ö·Î¿ì½ÃÅµ´Ï´Ù.";
+		m_inform = L"ëŸ´ì»¤ë¥¼ ë²„ë¡œìš°ì‹œí‚µë‹ˆë‹¤.";
 		break;
 	case CARD_BRUDLING:
 		m_attribute = CLICK_ONE;
@@ -306,7 +306,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¼±ÅÃÇÑ Å¸ÀÏ¿¡ ÀÖ´Â À¯´ÖÀ» ºê·çµé¸µÀÇ ¹äÀ¸·Î ¸¸µì´Ï´Ù.";
+		m_inform = L"ì„ íƒí•œ íƒ€ì¼ì— ìˆëŠ” ìœ ë‹›ì„ ë¸Œë£¨ë“¤ë§ì˜ ë°¥ìœ¼ë¡œ ë§Œë“­ë‹ˆë‹¤.";
 		break;
 	case CARD_ULTRA:
 		m_attribute = CLICK_ONE;
@@ -315,7 +315,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¾ÆÁÖ Á¡ÀİÀº ½Å»çÀÔ´Ï´Ù.\nÁ¤¸»·Î¿ä!";
+		m_inform = L"ì•„ì£¼ ì ì–ì€ ì‹ ì‚¬ì…ë‹ˆë‹¤.\nì •ë§ë¡œìš”!";
 		break;
 	case CARD_SUDDEN_RAID:
 		m_attribute = CLICK_ONE;
@@ -324,7 +324,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"Å¬¸¯ÇÑ ¾Æ±º À¯´ÖÀÌ ÀÖ´Â YÅ¸ÀÏ¿¡ Àú±Û¸µÀ» ¼ÒÈ¯ÇÕ´Ï´Ù.";
+		m_inform = L"í´ë¦­í•œ ì•„êµ° ìœ ë‹›ì´ ìˆëŠ” Yíƒ€ì¼ì— ì €ê¸€ë§ì„ ì†Œí™˜í•©ë‹ˆë‹¤.";
 		break;
 	case CARD_TORASQUE_ROAR:
 		m_attribute = CLICK_ONE;
@@ -333,7 +333,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¸ğµç Àû À¯´ÖÀÇ °ø°İÀ» ÇÑ¹ø¹æÇØÇÕ´Ï´Ù.";
+		m_inform = L"ëª¨ë“  ì  ìœ ë‹›ì˜ ê³µê²©ì„ í•œë²ˆë°©í•´í•©ë‹ˆë‹¤.";
 		break;
 	case CARD_PROVE:
 		m_attribute = CLICK_ONE;
@@ -342,7 +342,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"ÀÛÀº ÇÁ·ÎÅä½º ±â°èÀÔ´Ï´Ù.";
+		m_inform = L"ì‘ì€ í”„ë¡œí† ìŠ¤ ê¸°ê³„ì…ë‹ˆë‹¤.";
 		break;
 	case CARD_ZEALOT:
 		m_attribute = CLICK_ONE;
@@ -351,7 +351,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¿£ Å¸·Î ¾ÆµĞ!";
+		m_inform = L"ì—” íƒ€ë¡œ ì•„ë‘”!";
 		break;
 	case CARD_DRAGON:
 		m_attribute = CLICK_ONE;
@@ -360,7 +360,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"ÇÏÁö¸¸ µå¶ó±ºÀÌ Ãâµ¿ÇÑ´Ù¸é ¾î¶³±î?";
+		m_inform = L"í•˜ì§€ë§Œ ë“œë¼êµ°ì´ ì¶œë™í•œë‹¤ë©´ ì–´ë–¨ê¹Œ?";
 		break;
 	case CARD_RIVER:
 		m_attribute = CLICK_ONE;
@@ -369,7 +369,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"ÀÌ·±! ºÒ¹ßÀÌ³×¿ä";
+		m_inform = L"ì´ëŸ°! ë¶ˆë°œì´ë„¤ìš”";
 		break;
 	case CARD_MIND_CONTROL:
 		m_attribute = CLICK_ONE;
@@ -378,7 +378,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¼±ÅÃÇÑ À¯´ÖÀ» ³» À¯´ÖÀ¸·Î ¸¸µì´Ï´Ù.";
+		m_inform = L"ì„ íƒí•œ ìœ ë‹›ì„ ë‚´ ìœ ë‹›ìœ¼ë¡œ ë§Œë“­ë‹ˆë‹¤.";
 		break;
 	case CARD_MAKE_HIM_DRAGON:
 		m_attribute = CLICK_ONE;
@@ -387,7 +387,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¿òÁ÷ÀÏ¼ö ¾ø´Â ÀÚµéÀ» ¸ğµÎ ¿ë±âº´À¸·Î ¸¸µé¾î¶ó!";
+		m_inform = L"ì›€ì§ì¼ìˆ˜ ì—†ëŠ” ìë“¤ì„ ëª¨ë‘ ìš©ê¸°ë³‘ìœ¼ë¡œ ë§Œë“¤ì–´ë¼!";
 		break;
 	case CARD_RECALL:
 		m_attribute = CLICK_ONE;
@@ -396,7 +396,7 @@ void Card::cardType()
 		m_atk = 0;
 		m_hp = 0;
 		m_range = 0;
-		m_inform = L"¼±ÅÃÇÑ ¾Æ±ºÀ¯´ÖÀ» ±ÍÈ¯½ÃÅ°°í AP¸¦ µ¹·Á¹Ş½À´Ï´Ù.";
+		m_inform = L"ì„ íƒí•œ ì•„êµ°ìœ ë‹›ì„ ê·€í™˜ì‹œí‚¤ê³  APë¥¼ ëŒë ¤ë°›ìŠµë‹ˆë‹¤.";
 		break;
 	case CARD_END:
 		break;
@@ -411,11 +411,11 @@ void Card::cardUse(int idxx, int idxy)
 	{
 		m_isSelect = false;
 		m_isUse = true;
-		//cout << "Å¬¸¯ ÇÑ¹øÂ¥¸® µé¾î¿È" << endl;
+		//cout << "í´ë¦­ í•œë²ˆì§œë¦¬ ë“¤ì–´ì˜´" << endl;
 	}
 	else
 	{
-		//cout << "Å¬¸¯ µÎ¹øÂ¥¸®´Ï±î ÇÑ¹ø´õ Å¬¸¯°¡´ÉÇÑ »óÅÂ¸¸µé¾îÁÜ" << endl;
+		//cout << "í´ë¦­ ë‘ë²ˆì§œë¦¬ë‹ˆê¹Œ í•œë²ˆë” í´ë¦­ê°€ëŠ¥í•œ ìƒíƒœë§Œë“¤ì–´ì¤Œ" << endl;
 		m_isClickDouble = true;
 	}
 
@@ -423,8 +423,8 @@ void Card::cardUse(int idxx, int idxy)
 
 void Card::cardUseDouble(int idxx, int idxy)
 {
-	//cout << "Å¬¸¯ µÎ¹øÂ° µé¾î¿Ô¾î¿ä" << endl;
-	//cout << idxx << " " << idxy << "  µÎ¹ø¤Š Å¬¸¯¶§ ¹ŞÀº ÀÎµ¦½º°ª" << endl;
+	//cout << "í´ë¦­ ë‘ë²ˆì§¸ ë“¤ì–´ì™”ì–´ìš”" << endl;
+	//cout << idxx << " " << idxy << "  ë‘ë²ˆÂŠ í´ë¦­ë•Œ ë°›ì€ ì¸ë±ìŠ¤ê°’" << endl;
 	idxX2 = idxx;
 	idxY2 = idxy;
 	m_isSelect = false;
@@ -578,69 +578,69 @@ void Card::cardUseType()
 		}
 		break;
 	case CARD_MANEUVER:
-		//cout << "¿©±îÁö ¿Ô¾î¿ä" << endl;
-		//Ã³À½ Å¬¸¯½Ã ¿òÁ÷ÀÏ À¯´ÖÅ¸ÀÏÀ» ¹ŞÀ½
-		//°í·Î idxX,idxY´Â ¿òÁ÷ÀÏ À¯´ÖÀÌ ÀÖ´Â Å¸ÀÏ
-		//µÎ¹øÂ° Å¬¸¯½Ã ¿òÁ÷ÀÏ Å¸ÀÏÀ» ¹ŞÀ½
-		//°í·Î idxX2,idxY2´Â ¿òÁ÷ÀÏ Å¸ÀÏÀÌ´Ù.
-		//¿ì¼± ¿òÁ÷ÀÏ À¯´ÖÀÇ Æ÷ÀÎÅÍÁÖ¼Ò¸¦ ¹Ş¾Æ¿È
+		//cout << "ì—¬ê¹Œì§€ ì™”ì–´ìš”" << endl;
+		//ì²˜ìŒ í´ë¦­ì‹œ ì›€ì§ì¼ ìœ ë‹›íƒ€ì¼ì„ ë°›ìŒ
+		//ê³ ë¡œ idxX,idxYëŠ” ì›€ì§ì¼ ìœ ë‹›ì´ ìˆëŠ” íƒ€ì¼
+		//ë‘ë²ˆì§¸ í´ë¦­ì‹œ ì›€ì§ì¼ íƒ€ì¼ì„ ë°›ìŒ
+		//ê³ ë¡œ idxX2,idxY2ëŠ” ì›€ì§ì¼ íƒ€ì¼ì´ë‹¤.
+		//ìš°ì„  ì›€ì§ì¼ ìœ ë‹›ì˜ í¬ì¸í„°ì£¼ì†Œë¥¼ ë°›ì•„ì˜´
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
 			return;
 		}
-		//±× ÈÄ ¿òÁ÷ÀÏ¼ö ÀÖ´Â Å¸ÀÏÀÎÁö ÆÇº°ÇØº»´Ù.
-		//¿ì¼± ¼­ÀÖ´Â °÷ÀÌ¶û y°ªÀÌ °°À¸¸é ¿òÁ÷ÀÏÇÊ¿ä¾øÀ¸´Ï ÄÆ
+		//ê·¸ í›„ ì›€ì§ì¼ìˆ˜ ìˆëŠ” íƒ€ì¼ì¸ì§€ íŒë³„í•´ë³¸ë‹¤.
+		//ìš°ì„  ì„œìˆëŠ” ê³³ì´ë‘ yê°’ì´ ê°™ìœ¼ë©´ ì›€ì§ì¼í•„ìš”ì—†ìœ¼ë‹ˆ ì»·
 		if (idxY == idxY2 ||
-			//¶Ç´Â °¥ À§Ä¡¿¡ º®ÀÌ ÀÖÀ¸¸é ºü²Ù
+			//ë˜ëŠ” ê°ˆ ìœ„ì¹˜ì— ë²½ì´ ìˆìœ¼ë©´ ë¹ ê¾¸
 			m_tile->CheckTileWall(idxX,idxY2,TILE_WALL) ||
-			//¶Ç´Â µ·ÀÌ ¾øÀ»¶§
+			//ë˜ëŠ” ëˆì´ ì—†ì„ë•Œ
 			g_actionPoint < m_ap
-			//¶Ç´Â ¿ÀºêÁ§Æ®°¡ ÀÖÀ»¶§ ±Ùµ¥ ±×°Ô ³­ ´ëÇü °³´Â ¼ÒÇüÀÎ ¿¹¿Ü°¡ ÀÖÀ½
+			//ë˜ëŠ” ì˜¤ë¸Œì íŠ¸ê°€ ìˆì„ë•Œ ê·¼ë° ê·¸ê²Œ ë‚œ ëŒ€í˜• ê°œëŠ” ì†Œí˜•ì¸ ì˜ˆì™¸ê°€ ìˆìŒ
 			)
 		{
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
-			//cout << "¿òÁ÷ÀÏ¼ö ÀÖ´Â Å¸ÀÏÀÌ ¾Æ´Ï°Å³ª" << endl;
-			//cout << "µ·ÀÌ ¾ø´ë¿ä" << endl;
-			//cout << idxY << " " << idxY2 << " Ã¹¹øÂ°´Â À¯´ÖÀ§Ä¡ µÎ¹øÂ°´Â ¿òÁ÷ÀÏ YÀ§Ä¡¿¡¿ä" << endl;
+			//cout << "ì›€ì§ì¼ìˆ˜ ìˆëŠ” íƒ€ì¼ì´ ì•„ë‹ˆê±°ë‚˜" << endl;
+			//cout << "ëˆì´ ì—†ëŒ€ìš”" << endl;
+			//cout << idxY << " " << idxY2 << " ì²«ë²ˆì§¸ëŠ” ìœ ë‹›ìœ„ì¹˜ ë‘ë²ˆì§¸ëŠ” ì›€ì§ì¼ Yìœ„ì¹˜ì—ìš”" << endl;
 			return;
 		}
 
-		//±×·¡¼­ µû·Î »©¼­ °Ë»çÇØÁØ´Ù.
-		//¿ÀºêÁ§Æ®°¡ ÀÖÀ»¶© ³­ ´ëÇü °µ ¼ÒÇüÀÎ ±× °æ¿ìÀÏ¶§¸¸ ¹ØÀ¸·Î °¡°í
-		//³ª¸ÓÁö´Â ÀüºÎ ºü²Ù
+		//ê·¸ë˜ì„œ ë”°ë¡œ ë¹¼ì„œ ê²€ì‚¬í•´ì¤€ë‹¤.
+		//ì˜¤ë¸Œì íŠ¸ê°€ ìˆì„ë• ë‚œ ëŒ€í˜• ê°  ì†Œí˜•ì¸ ê·¸ ê²½ìš°ì¼ë•Œë§Œ ë°‘ìœ¼ë¡œ ê°€ê³ 
+		//ë‚˜ë¨¸ì§€ëŠ” ì „ë¶€ ë¹ ê¾¸
 		if (m_tile->CheckTileObject(idxX, idxY2))
 		{
-			//cout << "°¥ Å¸ÀÏ¿¡ ¿ÀºêÁ§Æ®°¡ ÀÖ´ë¿ä" << endl;
-			//¿ì¼± °¥ ¹æÇâ¿¡ ÀÖ´Â ±× À¯´ÖÀÇ Æ÷ÀÎÅÍ¸¦ ¹Ş¾Æ¿È
+			//cout << "ê°ˆ íƒ€ì¼ì— ì˜¤ë¸Œì íŠ¸ê°€ ìˆëŒ€ìš”" << endl;
+			//ìš°ì„  ê°ˆ ë°©í–¥ì— ìˆëŠ” ê·¸ ìœ ë‹›ì˜ í¬ì¸í„°ë¥¼ ë°›ì•„ì˜´
 			Unit* tempUnit = m_tile->returnInUnit(idxX, idxY2);
 
-			//°¥ ³à¼®Àº Å©°í °¥°÷¿¡ ÀÖ´Â°Ç ÀÛÀ»¶© 
-			//À» Á¦¿ÜÇÏ¸é ¸ø°¡´Â »óÈ²ÀÌ´Ï ºü²Ù
+			//ê°ˆ ë…€ì„ì€ í¬ê³  ê°ˆê³³ì— ìˆëŠ”ê±´ ì‘ì„ë• 
+			//ì„ ì œì™¸í•˜ë©´ ëª»ê°€ëŠ” ìƒí™©ì´ë‹ˆ ë¹ ê¾¸
 			if (m_unit->Getm_defenceType() == DFCTYPE_LA && tempUnit->Getm_defenceType() == DFCTYPE_SM)
 			{
-				//cout << "Å«³ğ¾Õ¿¡ ÀÛÀº³ğÀÌ ÀÖ´ë¿ä ¹¶°³½ÃÁ®" << endl;
+				//cout << "í°ë†ˆì•ì— ì‘ì€ë†ˆì´ ìˆëŒ€ìš” ë­‰ê°œì‹œì ¸" << endl;
 				m_isCrush = true;
 			}
 			else
 			{
 				m_isUse = false;
 				g_mouseState = M_NORMAL;
-				//cout << "Å«³ğµµ ¾Æ´Ï¸é °¥»ı°¢Á» ÇÏÁö¸¶¶ó ¾¾¹ß»õ²¥" << endl;
+				//cout << "í°ë†ˆë„ ì•„ë‹ˆë©´ ê°ˆìƒê°ì¢€ í•˜ì§€ë§ˆë¼" << endl;
 
 				return;
 			}
 		}
-		//À§ Á¶°Ç ¾È°É¸®°í ¿ÀºêÁ§Æ®µµ ¾øÀ¸¸é
-		//ÀÌµ¿½ÃÄÑÁÖ¸é µÈ´Ù.
-		//cout << "Çè³­ÇÑ °úÁ¤ÀÌ¾ú½À´Ï´Ù ÀÌµ¿ÇØµµ ÁÁ½À´Ï´Ù" << endl;
+		//ìœ„ ì¡°ê±´ ì•ˆê±¸ë¦¬ê³  ì˜¤ë¸Œì íŠ¸ë„ ì—†ìœ¼ë©´
+		//ì´ë™ì‹œì¼œì£¼ë©´ ëœë‹¤.
+		//cout << "í—˜ë‚œí•œ ê³¼ì •ì´ì—ˆìŠµë‹ˆë‹¤ ì´ë™í•´ë„ ì¢‹ìŠµë‹ˆë‹¤" << endl;
 		m_unit->moveTileY(idxX, idxY2, m_isCrush);
 		SOUNDMANAGER->play("maneuver", g_masterVolume * g_extraVolume);
 		m_isUse = false;
@@ -657,11 +657,11 @@ void Card::cardUseType()
 		break;
 	case CARD_FIELD_REPAIR:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -688,11 +688,11 @@ void Card::cardUseType()
 		break;
 	case CARD_STEAMPACK:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -719,11 +719,11 @@ void Card::cardUseType()
 		break;
 	case CARD_BARRIGATE:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -755,11 +755,11 @@ void Card::cardUseType()
 		break;
 	case CARD_SIEGE_MODE:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -792,11 +792,11 @@ void Card::cardUseType()
 		break;
 	case CARD_YAMATO:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -909,11 +909,11 @@ void Card::cardUseType()
 		break;
 	case CARD_LURKER:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -946,11 +946,11 @@ void Card::cardUseType()
 		break;
 	case CARD_BURROW:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -983,11 +983,11 @@ void Card::cardUseType()
 		break;
 	case CARD_BRUDLING:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -1041,11 +1041,11 @@ void Card::cardUseType()
 		break;
 	case CARD_SUDDEN_RAID:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -1190,11 +1190,11 @@ void Card::cardUseType()
 		break;
 	case CARD_MIND_CONTROL:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -1223,11 +1223,11 @@ void Card::cardUseType()
 		break;
 	case CARD_MAKE_HIM_DRAGON:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
@@ -1260,11 +1260,11 @@ void Card::cardUseType()
 		break;
 	case CARD_RECALL:
 		m_unit = m_tile->returnInUnit(idxX, idxY);
-		//±Ùµ¥ ±× Å¸ÀÏ¿¡ À¯´ÖÀÌ ¾ø´Ù¸é?
-		//³»º¸³»ÁØ´Ù.
+		//ê·¼ë° ê·¸ íƒ€ì¼ì— ìœ ë‹›ì´ ì—†ë‹¤ë©´?
+		//ë‚´ë³´ë‚´ì¤€ë‹¤.
 		if (m_unit == nullptr)
 		{
-			//cout << "±Ùµ¥ À¯´ÖÀÌ ³Î??" << endl;
+			//cout << "ê·¼ë° ìœ ë‹›ì´ ë„??" << endl;
 			m_isUse = false;
 			g_mouseState = M_NORMAL;
 
